@@ -8,7 +8,7 @@
 }
 /*Colors*/
 :root{
-    --first-color: #0618b3;
+    --first-color: #ff2323;
     --white-color: #ffffff;
     --dark-color: #2A3B47;
     --text-color: #697477;
@@ -17,7 +17,7 @@
 
 :root{
     --body-font: 'Poppins', sans-serif;
-    --big-font-size: 6.25rem;
+    --big-font-size: 10.25rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
@@ -144,6 +144,7 @@ img{
     color: var(--first-color);
 }
 .nav_logo{
+    font-size: 1.5rem;
     color: var(--white-color);
 }
 .nav_toggle{
