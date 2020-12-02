@@ -241,3 +241,64 @@ img{
 .about_social-icon:hover{
     color: var(--first-color);
 }
+
+/*Skills*/
+.skills_container{
+    row-gap: 2rem;
+}
+.skills_subtitle{
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+    padding-left: 1rem;
+}
+.skills_name{
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-right: var(--mb-2);
+    margin-bottom: var(--mb-3);
+    padding: 0.25rem 5rem;
+    background-attachment: var(--white-color);
+    border-radius: 0.25rem;
+}
+.skills_name:hover{
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+.skills_img img{
+    border-radius: 0.5rem;
+}
+
+/*Portfolio*/
+.portfolio{
+    background-color: var(--white-color);
+}
+.portfolio_container{
+    justify-items: center;
+    row-gap: 2rem;
+}
+.portfolio_img{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio_img img{
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+.portfolio_link{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+.portfolio_img:hover .portfolio_link{
+    bottom: 0;
+}
+
