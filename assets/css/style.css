@@ -196,12 +196,14 @@ img{
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
+    font-size: 1.2rem;
 }
 .home_img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 395px;
+    height: 800px;
+    width: 495px;
 }
 
 /*About*/
