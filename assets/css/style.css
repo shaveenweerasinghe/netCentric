@@ -359,7 +359,7 @@ img{
 #submit-loader{
     display: none;
 }
-.contact_form #message-warning{
+#message-warning{
     display: none;
     color: #fff;
     background: #ed3c0d;
@@ -369,7 +369,7 @@ img{
     margin: 15px 0;
 }
   
-.contact_form #message-success{
+#message-success{
     display: none;
     color: #fff;
     background: #18d26e;
