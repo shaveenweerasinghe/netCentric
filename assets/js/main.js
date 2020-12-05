@@ -75,3 +75,51 @@ sr.reveal('.contact_subtitle', {})
 sr.reveal('.contact_text', {interval: 200})
 sr.reveal('.contact_input', {delay: 400})
 sr.reveal('.contact_button', {delay: 500})
+
+/* local validation */
+$('#contact_form').validate({
+
+    /* Submit */
+    submitHandler: function(form) {
+
+        var sLoader = $('#submit-loader');
+
+        $.ajax({      	
+
+          type: "POST",
+          url: "inc/sendEmail.php",
+          data: $(form).serialize(),
+          beforeSend: function() { 
+
+              sLoader.fadeIn(); 
+
+          },
+          success: function(msg) {
+
+            // Message was sent
+            if (msg == 'OK') {
+                sLoader.fadeOut(); 
+               $('#message-warning').hide();
+               $('#contact_form').fadeOut();
+               $('#message-success').fadeIn();   
+            }
+            // There was an error
+            else {
+                sLoader.fadeOut(); 
+               $('#message-warning').html(msg);
+                $('#message-warning').fadeIn();
+            }
+
+          },
+          error: function() {
+
+              sLoader.fadeOut(); 
+              $('#message-warning').html("Something went wrong. Please try again.");
+             $('#message-warning').fadeIn();
+
+          }
+
+      });     		
+      }
+
+});

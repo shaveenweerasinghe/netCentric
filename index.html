@@ -155,7 +155,7 @@
                         <span class="contact_text">Colombo</span>
                     </div>
 
-                    <form action="" class="contact_form">
+                    <form action="" class="contact_form" method="POST" action="">
                         <div class="contact_inputs">
                             <input type="text" placeholder="Name" class="contact_input">
                             <input type="email" placeholder="Email" class="contact_input">
@@ -164,8 +164,25 @@
                         <textarea name="" id="" cols="0" rows="10" placeholder="Description" class="contact_input"></textarea>
                         
                         <input type="submit" value="SUBMIT" class="contact_button">
+                        <div id="submit-loader">
+                            <div class="text-loader">Sending...</div>                             
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                        </div>
 
                     </form>
+
+                <!-- contact-warning -->
+                <div id="message-warning"></div>            
+                <!-- contact-success -->
+      		    <div id="message-success">
+                    <i class="fa fa-check"></i>Your message was sent, Thank you!<br>
+      		    </div>
+
                 </div>
 
             </section>
