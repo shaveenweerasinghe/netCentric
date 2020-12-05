@@ -349,11 +349,34 @@ img{
 .contact .icon{
     font-size: 1.5rem;
 }
+.contact_form .validate{
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
 #submit-loader{
     display: none;
 }
-#message-success{
+.contact_form #message-warning{
     display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+  
+.contact_form #message-success{
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin: 15px 0;
 }
 
 /*Footer*/
