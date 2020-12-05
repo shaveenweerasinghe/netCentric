@@ -346,6 +346,9 @@ img{
     font-size: var(--normal-font-size);
     cursor: pointer;
 }
+.contact .icon{
+    font-size: 1.5rem;
+}
 
 /*Footer*/
 .l-footer{
