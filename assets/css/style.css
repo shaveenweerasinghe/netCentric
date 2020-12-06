@@ -17,10 +17,18 @@
 
 :root{
     --body-font: 'Poppins', sans-serif;
-    --big-font-size: 10.25rem;
-    --h2-font-size: 2rem;
+    --big-font-size: 8.25rem;
+    --h2-font-size: 1.5rem;
     --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
+    --small-font-size: 0.815rem;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --big-font-size: 10.25rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+    }
 }
 
 /*Margins*/
@@ -83,7 +91,7 @@ img{
 .section-title::after{
     position: absolute;
     content: "";
-    width: 50px;
+    width: 40px;
     height: 0.18rem;
     left: 0;
     right: 0;
@@ -177,7 +185,7 @@ img{
 }
 .home_container{
     height: calc(100vh - var(--header-height));
-    row-gap: 10rem;
+    row-gap: 5rem;
 }
 .home_title{
     align-self: flex-end;
@@ -202,7 +210,6 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 715px;
     width: 350px;
 }
 
