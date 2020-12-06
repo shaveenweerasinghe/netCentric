@@ -202,8 +202,8 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 800px;
-    width: 495px;
+    height: 815px;
+    width: 350px;
 }
 
 /*About*/
@@ -449,8 +449,8 @@ img{
         row-gap: 0;
     }
     .home_img{
-        width: 524px;
-        right: 10%;
+        width: 425px;
+        right: 20%;
     }
 
     .about_container{
