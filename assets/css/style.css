@@ -202,7 +202,7 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 815px;
+    height: 715px;
     width: 350px;
 }
 
@@ -449,6 +449,7 @@ img{
         row-gap: 0;
     }
     .home_img{
+        height: 815px;
         width: 425px;
         right: 20%;
     }
