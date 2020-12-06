@@ -33,7 +33,7 @@ function scrollActive(){
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= screenTop + sectionHeight){
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelectorAll('.nav_menu a[href*=' + sectionId + ']').classList.add('active')
 
         }else{

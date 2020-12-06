@@ -140,7 +140,7 @@ img{
     position: relative;
     color: var(--dark-color);
 }
-.nav_link_hover{
+.nav_link:hover{
     color: var(--first-color);
 }
 .nav_logo{
