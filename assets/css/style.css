@@ -15,10 +15,11 @@
 
 }
 
+/*Font*/
 :root{
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 8.25rem;
-    --h2-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.815rem;
 }
@@ -91,12 +92,12 @@ img{
 .section-title::after{
     position: absolute;
     content: "";
-    width: 40px;
+    width: 32px;
     height: 0.18rem;
     left: 0;
     right: 0;
     margin: auto;
-    top: 3rem;
+    top: 2rem;
     background-color: var(--first-color);
 }
 
@@ -428,7 +429,7 @@ img{
     }
 
     .nav{
-        height: calc(var(--header-height) + 4rem);
+        height: calc(var(--header-height) + 1rem);
     }
     .nav_list{
         display: flex;
