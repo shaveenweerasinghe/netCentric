@@ -34,10 +34,10 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active')
+            document.querySelectorAll'.nav_menu a[href*=' + sectionId + ']').classList.add('active')
 
         }else{
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
+            document.querySelectorAll('.nav_menu a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
 }
